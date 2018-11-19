@@ -1,0 +1,11 @@
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/bin/Debug/netcoreapp2.1/MiniMax.deps.json
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/bin/Debug/netcoreapp2.1/MiniMax.runtimeconfig.json
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/bin/Debug/netcoreapp2.1/MiniMax.runtimeconfig.dev.json
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/bin/Debug/netcoreapp2.1/MiniMax.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/bin/Debug/netcoreapp2.1/MiniMax.pdb
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/obj/Debug/netcoreapp2.1/MiniMax.csprojAssemblyReference.cache
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/obj/Debug/netcoreapp2.1/MiniMax.csproj.CoreCompileInputs.cache
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/obj/Debug/netcoreapp2.1/MiniMax.AssemblyInfoInputs.cache
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/obj/Debug/netcoreapp2.1/MiniMax.AssemblyInfo.cs
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/obj/Debug/netcoreapp2.1/MiniMax.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/MiniMax/obj/Debug/netcoreapp2.1/MiniMax.pdb

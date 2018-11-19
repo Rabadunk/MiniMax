@@ -1,0 +1,17 @@
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/xunit.runner.visualstudio.dotnetcore.testadapter.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/xunit.runner.reporters.netcoreapp10.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/xunit.runner.utility.netcoreapp10.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/Tests.deps.json
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/Tests.runtimeconfig.json
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/Tests.runtimeconfig.dev.json
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/Tests.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/Tests.pdb
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/MiniMax.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/bin/Debug/netcoreapp2.1/MiniMax.pdb
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.csprojAssemblyReference.cache
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.csproj.CoreCompileInputs.cache
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.AssemblyInfoInputs.cache
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.AssemblyInfo.cs
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.csproj.CopyComplete
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.dll
+/Users/jonathan.alphonso/RiderProjects/MiniMax/MiniMax/Tests/obj/Debug/netcoreapp2.1/Tests.pdb
