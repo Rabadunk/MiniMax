@@ -5,7 +5,7 @@ namespace MiniMax
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello and welcome to TIC TAC TOEEE A;SLDJFADKLSF!!!!!"); 
+            Console.WriteLine("Hello and welcome to TIC TAC TOE!!!!!"); 
         }
     }
 }

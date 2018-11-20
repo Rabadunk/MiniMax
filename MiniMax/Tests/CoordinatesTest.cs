@@ -11,7 +11,7 @@ namespace Tests
         private string _symbol = "X";
         
         [Fact]
-        public void Test1()
+        public void TestCoordinatesForNormalScenario()
         {
             var coordinatesOne = new Coordinates(_rowPos, _colPos, _symbol);
             
@@ -21,7 +21,7 @@ namespace Tests
         }
 
         [Fact]
-        public void Test2()
+        public void TestCoordinatesForRandomScenario()
         {
             _rowPos = 12;
             _colPos = 533;
@@ -33,5 +33,6 @@ namespace Tests
             Assert.Equal(533, coordinatesTwo.GetCol());
             Assert.Equal("This is a symbol", coordinatesTwo.GetSymbol());
         }
+
     }
 }
