@@ -3,65 +3,38 @@ using System.Linq;
 
 namespace MiniMax
 {
-    public class Player
+    public class Player : IPlayer<Player>
     {
-        private string _move;
-        private int _movesRow;
-        private int _movesCol;
-        
-        public Player()
+        private readonly string _symbol;
+        private readonly int _id;
+
+        public Player(int id, string symbol)
         {
-            _move = "Initial Move";
-            _movesRow = 0;
-            _movesCol = 0;
+            _id = id;
+            _symbol = symbol;
         }
 
-        public bool IsValid()
+        public Coordinates GetMove()
         {
-            if (!_move.Contains(","))
-            {
-                return false;
-            }
-
-            var numbers = _move.Split(",");
-
-            if (numbers.Length > 2)
-            {
-                return false;
-            }
-
-            return int.TryParse(numbers[0], out var i) && int.TryParse(numbers[1], out var j);
+            var input = Console.ReadLine();
+            // I'm returning an invalid coordinate object if it isn't a valid input.
+            return CheckForValidMove(input) ? ConvertToValidCoordinate(input) : new Coordinates(123, 123, "InvalidInput");
         }
 
-        public void SetMove(string move)
+        private static bool CheckForValidMove(string input)
         {
-            _move = move;
-            if (!IsValid()) return;
-            
-            var numbers = _move.Split(",");
-            int.TryParse(numbers[0], out _movesRow);
-            int.TryParse(numbers[1], out _movesCol);
+            if (input.Length != 3) return false;
+            if (input[1].ToString() != ",") return false;
+            if(!int.TryParse(input[0].ToString(), out var row)) return false;
+            if(!int.TryParse(input[2].ToString(), out var col)) return false;
+            return Enumerable.Range(0,2).Contains(row - 1) && Enumerable.Range(0,2).Contains(col - 1);
         }
 
-        public void MakeMove()
+        private Coordinates ConvertToValidCoordinate(string move)
         {
-            _move = Console.ReadLine();
-            if (!IsValid()) return;
-            
-            var numbers = _move.Split(",");
-            int.TryParse(numbers[0], out _movesRow);
-            int.TryParse(numbers[1], out _movesCol);
+            return new Coordinates(int.Parse(move[0].ToString()) - 1, int.Parse(move[2].ToString()) - 1, _symbol);
         }
 
-        public int GetRowMove()
-        {
-            return _movesRow;
-        }
-
-        public int GetColMove()
-        {
-            return _movesCol;
-        }
 
     }
 }

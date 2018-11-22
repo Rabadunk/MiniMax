@@ -2,28 +2,21 @@ namespace MiniMax
 {
     public class Grid
     {
-        private readonly int _numOfCols;
-        private readonly int _numOfRows;
+        private readonly int _size;
         private string[,] _grid;
         
 
-        public Grid(int width, int height)
+        public Grid(int size)
         {
-            _numOfRows = height;
-            _numOfCols = width;
-            
-            _grid = new string[width, _numOfRows];
-
-            for (var rowPos = 0; rowPos < _numOfRows; rowPos++)
+            _size = size;           
+            _grid = new string[size, _size];
+            for (var rowPos = 0; rowPos < _size; rowPos++)
             {
-                for (var colPos = 0; colPos < _numOfCols; colPos++)
-                {
-                
+                for (var colPos = 0; colPos < _size; colPos++)
+                {   
                     _grid[rowPos, colPos] = ".";
-
                 }
-            }
-                 
+            }        
         }
 
         public bool PlaceTile(Coordinates coordinate)
@@ -35,19 +28,12 @@ namespace MiniMax
 
         public bool CoordinateCheck(Coordinates coordinate)
         {
-
-            if (coordinate.GetSymbol().Length > 1)
+            if (coordinate.GetRow() > _size || coordinate.GetCol() > _size)
             {
                 return false;
             }
-
-            if (coordinate.GetRow() > _numOfRows || coordinate.GetCol() > _numOfCols)
-            {
-                return false;
-            }
-
+            
             return coordinate.GetRow() >= 0 && coordinate.GetCol() >= 0;
         }
-
     }
 }

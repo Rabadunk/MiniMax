@@ -12,6 +12,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Coordinates.cs" t="Include" />
         <e p="Grid.cs" t="Include" />
+        <e p="IPlayer.cs" t="Include" />
         <e p="MiniMax.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
