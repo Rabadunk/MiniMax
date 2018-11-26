@@ -5,7 +5,6 @@ namespace Tests
 {
     public class GridTest
     {
-
         [Theory]
         [InlineData(1, 2, "X", 3)]
         public void TestGridForValidCoordinates(int rowPos, int colPos, string symbol, int size)

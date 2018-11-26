@@ -6,28 +6,35 @@ namespace MiniMax
     public class Player : IPlayer<Player>
     {
         private readonly string _symbol;
-        private readonly int _id;
+        private string _input;
 
-        public Player(int id, string symbol)
+        public Player(string symbol)
         {
-            _id = id;
             _symbol = symbol;
         }
 
         public Coordinates GetMove()
         {
-            var input = Console.ReadLine();
-            // I'm returning an invalid coordinate object if it isn't a valid input.
-            return CheckForValidMove(input) ? ConvertToValidCoordinate(input) : new Coordinates(123, 123, "InvalidInput");
+            _input = Console.ReadLine();
+            if (!CheckIfValidMove(_input)) throw new InvalidCoordinateException("That coordinate is invalid.");
+            return ConvertToValidCoordinate(_input);
         }
 
-        private static bool CheckForValidMove(string input)
+        public Coordinates MakeMove(string _input)
+        {
+            if (!CheckIfValidMove(_input)) throw new InvalidCoordinateException("That coordinate is invalid.");
+            return ConvertToValidCoordinate(_input);
+        }
+        
+        public bool CheckIfValidMove(string input)
         {
             if (input.Length != 3) return false;
             if (input[1].ToString() != ",") return false;
             if(!int.TryParse(input[0].ToString(), out var row)) return false;
             if(!int.TryParse(input[2].ToString(), out var col)) return false;
-            return Enumerable.Range(0,2).Contains(row - 1) && Enumerable.Range(0,2).Contains(col - 1);
+            var validRow = row - 1;
+            var validCol = col - 1;
+            return Enumerable.Range(0,3).Contains(validRow) && Enumerable.Range(0,3).Contains(validCol);
         }
 
         private Coordinates ConvertToValidCoordinate(string move)
