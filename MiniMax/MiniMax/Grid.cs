@@ -1,3 +1,5 @@
+using System.Linq;
+
 namespace MiniMax
 {
     public class Grid
@@ -35,5 +37,29 @@ namespace MiniMax
             
             return coordinate.GetRow() >= 0 && coordinate.GetCol() >= 0;
         }
+
+        public string[,] GetGrid()
+        {
+            return _grid;
+        }
+
+        public int GetSize()
+        {
+            return _size;
+        }
+
+        public bool CheckRowWinCondition()
+        {
+            for (var i = 0; i < 3; i++)
+            {
+                var list = new[] {_grid[i, 0], _grid[i, 1], _grid[i, 2]};
+                var allAreSame = list.All(x => x == list.First() && x != ".");
+                
+                if (allAreSame) return true;
+            }
+
+            return false;          
+        }
+        
     }
 }

@@ -1,6 +1,6 @@
 namespace MiniMax
 {
-    public interface IPlayer<Player>
+    public interface IPlayer
     {
         Coordinates GetMove();
     }

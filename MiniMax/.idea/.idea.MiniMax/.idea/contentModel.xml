@@ -11,9 +11,11 @@
       <e p="MiniMax" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Coordinates.cs" t="Include" />
+        <e p="FakePlayer.cs" t="Include" />
         <e p="Grid.cs" t="Include" />
         <e p="InvalidCoordinateException.cs" t="Include" />
         <e p="IPlayer.cs" t="Include" />
+        <e p="Main.cs" t="Include" />
         <e p="MiniMax.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -23,7 +25,7 @@
           </e>
         </e>
         <e p="Player.cs" t="Include" />
-        <e p="Program.cs" t="Include" />
+        <e p="View.cs" t="Include" />
       </e>
       <e p="MiniMax.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />

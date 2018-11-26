@@ -40,6 +40,21 @@ namespace Tests
             var grid = new Grid(size);
             Assert.False(grid.PlaceTile(invalidCoordinate));
         }
-        
+
+        [Theory]
+        [InlineData(1, 1, 1, 2, 1, 3)]
+        public void ShouldReturnTrueWhenFullRowIsPresent(int x1, int y1, int x2, int y2, int x3, int y3)
+        {
+            var coordinateOne = new Coordinates(x1, y1, "X");
+            var coordinateTwo = new Coordinates(x2, y2, "X");
+            var coordinateThree = new Coordinates(x3, y3, "X");
+            var grid = new Grid(3);
+            grid.PlaceTile(coordinateOne);
+            grid.PlaceTile(coordinateTwo);
+            grid.PlaceTile(coordinateThree);
+            
+            Assert.True(grid.CheckRowWinCondition());
+        }
+
     }
 }

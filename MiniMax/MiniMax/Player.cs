@@ -3,14 +3,16 @@ using System.Linq;
 
 namespace MiniMax
 {
-    public class Player : IPlayer<Player>
+    public class Player : IPlayer
     {
         private readonly string _symbol;
         private string _input;
+        private readonly int _id;
 
-        public Player(string symbol)
+        public Player(string symbol, int id)
         {
             _symbol = symbol;
+            _id = id;
         }
 
         public Coordinates GetMove()
@@ -19,8 +21,8 @@ namespace MiniMax
             if (!CheckIfValidMove(_input)) throw new InvalidCoordinateException("That coordinate is invalid.");
             return ConvertToValidCoordinate(_input);
         }
-
-        public Coordinates MakeMove(string _input)
+        
+        public Coordinates FakeMove(string _input)
         {
             if (!CheckIfValidMove(_input)) throw new InvalidCoordinateException("That coordinate is invalid.");
             return ConvertToValidCoordinate(_input);
@@ -40,6 +42,16 @@ namespace MiniMax
         private Coordinates ConvertToValidCoordinate(string move)
         {
             return new Coordinates(int.Parse(move[0].ToString()) - 1, int.Parse(move[2].ToString()) - 1, _symbol);
+        }
+
+        public int GetId()
+        {
+            return _id;
+        }
+
+        public string GetSymbol()
+        {
+            return _symbol;
         }
 
 
